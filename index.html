@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive với CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid-layout">
+        <!-- 1. Header -->
+        <header class="header">
+            <h1>Website Title - CSS Grid Responsive</h1>
+        </header>
+
+        <!-- 2. Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Main Content -->
+        <main class="main-content">
+            <h2>Nội Dung Chính (Main Content)</h2>
+            <p>Bố cục này được xây dựng hoàn toàn bằng <strong>CSS Grid</strong> và sử dụng <code>grid-template-areas</code> để kiểm soát từng khu vực hiển thị.</p>
+            <p>Trên màn hình máy tính để bàn (Desktop), giao diện được chia thành các hàng và cột linh hoạt: Header và Navigation trải dài toàn bộ chiều rộng, khu vực giữa chia thành Main Content và Sidebar, cuối cùng là Footer.</p>
+            <p>Khi hiển thị trên thiết bị di động (Mobile), toàn bộ các khu vực sẽ tự động chuyển thành một cột dọc duy nhất (single column) giúp trải nghiệm đọc mượt mà và không bị tràn khung nhìn.</p>
+        </main>
+
+        <!-- 4. Sidebar -->
+        <aside class="sidebar">
+            <h3>Nội Dung Phụ (Sidebar)</h3>
+            <div class="widget">
+                <h4>Tin vắn</h4>
+                <p>Cập nhật xu hướng thiết kế web hiện đại với CSS Grid và Flexbox.</p>
+            </div>
+            <div class="widget">
+                <h4>Quảng cáo / Widget</h4>
+                <p>Khung banner hoặc liên kết hữu ích.</p>
+            </div>
+        </aside>
+
+        <!-- 5. Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về Web Academy. Thiết kế Responsive bằng CSS Grid.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
