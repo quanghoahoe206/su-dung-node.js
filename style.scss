@@ -1,0 +1,69 @@
+// Khai báo biến
+$primary-color: #2b6cb0;
+$secondary-color: #319795;
+$bg-color: #f7fafc;
+$text-color: #2d3748;
+
+// Mixin căn giữa
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Bố cục lồng nhau (Nesting)
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 40px 20px;
+
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    h1 {
+      color: $primary-color;
+      font-size: 24px;
+      margin-top: 0;
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn-group {
+      @include flex-center;
+      gap: 15px;
+      margin-top: 20px;
+
+      .btn {
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #ffffff;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        &-primary {
+          background-color: $primary-color;
+        }
+
+        &-secondary {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
